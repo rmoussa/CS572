@@ -1,16 +1,11 @@
-1-
+1-Becuase sometime we not need to put in queue we just watch the queue of eventhandeler and check if 
+current event was processed it will queue the event in callback after last I/O
 
 
-2-
+2-We use setImmediate if we want to queue the function behind I/O event callbacks that are already in the event queue.
+Use process.nextTick to effectively queue the function at the head of the callstack so that it executes immediately after the current function completes.
 
 
-3-Error
-Buffer
-NaN
-Promise
-Set
-Array
-http
-url
-stream
-net
+
+3-Error,Buffer,NaN,Promise,Set
+Array,http,url,stream,net
