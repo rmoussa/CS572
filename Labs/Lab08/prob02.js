@@ -1,4 +1,4 @@
-{
+/*{
     "_id": "5bbbb564dd4eb69795fb4f5e",
     "ISBN": "105122",
     "bookName": "Node.js",
@@ -15,10 +15,11 @@
        "phoneNumber": "6416416411"
     }
  }
+ */
  
- Create 3 indexes over the book collection one index for the following properties:
-  - ISBN
-  - Author
-  - Tags
-  And another indexes for borrowedBy for properties:
-  - endDate+phoneNumber
+//  Create 3 indexes over the book collection one index for the following properties:
+//   - ISBN
+//   - Author
+//   - Tags
+//   And another indexes for borrowedBy for properties:
+//   - endDate+phoneNumber
