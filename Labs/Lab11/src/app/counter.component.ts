@@ -7,7 +7,7 @@ import { Component, OnInit, EventEmitter } from "@angular/core";
   <p> {{ counter }} </p>
   <button (click)="decrease()">-</button>
 
-  <input value="{{counter}}" (change)="changeValue($event)"
+  <input value="{{counter}}" (keyup)="changeValue($event)"
     (input)="counter=$event.target.value">
 
   `,

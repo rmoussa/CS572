@@ -12,7 +12,7 @@ import { Component } from "@angular/core";
 export class AppComponent {
   title = "Lab11";
 
-  otherChanged(e: string) {console.log(`Message: ${e}`); // Yes finally!! I'm hungry!}
+  otherChanged(e: string) {console.log('Message: ${e}'); // Yes finally!! I'm hungry!}
 
   // otherChanged(e) {
   //   this.ComponentCounterValue = e;
