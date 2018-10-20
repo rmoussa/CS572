@@ -4,12 +4,14 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { ListComponent } from './list/list.component';
 import { MyvisibilityDirective } from './myvisibility.directive';
+import { MynewcolorDirective } from './mynewcolor.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListComponent,
-    MyvisibilityDirective
+    MyvisibilityDirective,
+    MynewcolorDirective
   ],
   imports: [
     BrowserModule

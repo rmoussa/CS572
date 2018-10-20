@@ -8,22 +8,25 @@ import { Component, OnInit, Input } from "@angular/core";
 export class ListComponent implements OnInit {
   @Input()
   myInputArray;
-  v = true;
+  isVisible = true;
 
   constructor() {}
 
   ngOnInit() {}
 
   toggle() {
-    switch (this.v) {
+    switch (this.isVisible) {
       case false:
-        this.v = true;
+        this.isVisible = true;
         break;
       case true:
-        this.v = false;
+        this.isVisible = false;
         break;
     }
+    console.log(this.isVisible);
+  }
 
-    console.log(this.v);
+  displayColor(value) {
+    console.log("An element changed its color to " + value);
   }
 }

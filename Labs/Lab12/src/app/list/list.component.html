@@ -2,9 +2,15 @@
   list works!
 </p>
 
-<p [appMyvisibility]='v'>{{myInputArray}}</p>
+<p [appMyvisibility]='isVisible'>{{myInputArray}}</p>
+<!-- <p appMyvisibility [newInputNAme]='isVisible'>{{myInputArray}}</p> -->
+
+
 <button (click)="toggle()">clickme</button>
 
 <ul>
   <li *ngFor="let itm of myInputArray"> {{ itm }}</li>
 </ul>
+
+
+<input appMynewcolor [color]="" (OnColorChanged)='displayColor($event)' />
